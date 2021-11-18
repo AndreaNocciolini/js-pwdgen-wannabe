@@ -12,8 +12,8 @@ console.log(`surname ` + surname);
 let favouriteColor = prompt(`And your favourite color is?`);
 console.log(`favouriteColor ` + favouriteColor);
 
-let password = `${name}${surname}${favouriteColor}21`;
+let conclusion = `<p>Ok, so your name is <span class="name-color">${name}</span> <span class="surname-color">${surname}</span> and your favourite color is <span class="fc-color">${favouriteColor}</span>. Nice! 21!</p>`;
 
-console.log(password);
-document.getElementById(`my_div`).innerHTML = password;
+console.log(conclusion);
+document.getElementById(`my_div`).innerHTML = conclusion;
 
