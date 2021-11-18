@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.main {
+   display: flex;
+   justify-content: space-around;
+   font-size: 2em;
+   align-items: center;
+   height: 100vh;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+/* Js Colors */
+.name-color {
+    color: #1a8cff;
+}
+
+.surname-color {
+    color: #00ff00;
+}
+
+.fc-color {
+    color: hsl(0, 56%, 26%);
+}
+/* End Js Colors */
+
+.name-color,
+.surname-color,
+.fc-color {
+    position: relative;
+}
+
+.name-color:hover,
+.surname-color:hover,
+.fc-color:hover {
+    animation: jump 0.9s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes jump {
+    0% {top: 0;}
+    25% {top: -4px;}
+    50% {top: -13px;}
+    75% {top: -4px;}
+    100% {top: 0;}
+}
